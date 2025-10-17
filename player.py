@@ -1,5 +1,7 @@
 from turtle import Turtle, Screen
 
+FINISH_LINE_Y = 190
+
 scr = Screen()
 scr.listen()
 MOVE_DISTANCE = 10
@@ -20,3 +22,11 @@ class Player(Turtle):
 
     def cross(self, key):
         scr.onkey(self.move_up, key)
+
+    def is_at_finish_line(self):
+        if self.ycor() > FINISH_LINE_Y:
+            return True
+        else: return None
+
+    def back_to_start(self):
+        self.goto(0, -280)

@@ -20,5 +20,9 @@ while is_game_on:
     player.cross('Up')
     new_auto.create_auto()
     new_auto.move_autos()
+    for auto in new_auto.autos:
+        if player.distance(auto) < 20:
+            print("Game Over")
+            is_game_on = False
 
 screen.exitonclick()

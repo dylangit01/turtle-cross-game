@@ -30,3 +30,4 @@ class Auto:
     def move_autos(self):
         for auto in self.autos:
             auto.backward(START_MOVE_DISTANCE)
+

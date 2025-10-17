@@ -1,5 +1,4 @@
 from turtle import Turtle, Screen
-import time
 
 scr = Screen()
 scr.listen()

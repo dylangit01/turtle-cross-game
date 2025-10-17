@@ -1,6 +1,5 @@
 from turtle import Screen
 from auto import Auto
-from auto_copy import AutoCopy
 from player import Player
 import time
 
